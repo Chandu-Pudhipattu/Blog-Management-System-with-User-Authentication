@@ -9,7 +9,8 @@ from django.views.generic import ListView,DetailView,CreateView,UpdateView,Delet
 
 def home(request):
     context = {
-        'posts' : Post.objects.all() 
+        'posts' : Post.objects.all(),
+        'recent_posts': Post.objects.order_by('-created_at')[:5],  # Fetch the 5 most recent posts
     }
     return render(request,'blog/home.html',context)
 

@@ -9,6 +9,7 @@ class Post(models.Model):
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now) # auto_now_add will create a date when the post is created (issue is we cant update the date posted), however we can use default value as timezone.now
     # now() paranthesis not included becasue iam not executing here instead iam just passing as default value
+    created_at = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)  # whenever the user deletes his/her acc then their posts will be deleted automatically
 
     def __str__(self):
