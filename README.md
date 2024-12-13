@@ -1,4 +1,4 @@
-# Blog Post project
+# Digital Dairy project
  Raise your voice to Inspire the Nation....
 
 ## About 
