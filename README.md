@@ -1,5 +1,4 @@
-# Digital Dairy project
- Raise your voice to Inspire the Nation....
+# Blog Management System with User Authentication
 
 ## About 
 This web application built with Django that allows users to create, edit, and delete blog posts, as well as manage user accounts. This project demonstrates the core functionalities of a blog platform and includes user authentication, and a responsive design.
